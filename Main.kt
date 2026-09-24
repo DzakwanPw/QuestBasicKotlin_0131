@@ -30,9 +30,17 @@ fun conditional() {
     println("$d $result")
 }
 
+fun loops() {
+    for (number in 1..5) print(number)
+    println()
+    var i = 0
+    while (i < 3) { println("while $i"); i++ }
+}
+
 fun main() {
     helloWorld()
     variables()
     collection()
     conditional()
+    loops()
 }
