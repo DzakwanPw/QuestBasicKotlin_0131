@@ -19,8 +19,20 @@ fun collection() {
     println("Harga apple: ${juice["apple"]}")
 }
 
+fun conditional() {
+    val check = true
+    val d = if (check) 1 else 2
+    val result = when ("Hello") {
+        "1" -> "One"
+        "Hello" -> "Greeting"
+        else -> "Unknown"
+    }
+    println("$d $result")
+}
+
 fun main() {
     helloWorld()
     variables()
     collection()
+    conditional()
 }
